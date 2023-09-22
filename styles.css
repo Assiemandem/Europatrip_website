@@ -11,12 +11,13 @@ body{
 
 .main-header{
     background-color: rgba(0, 0, 0, .20);
-    background-image: url("Images/homepage_achtergrondfoto.jpg");
-    background-size: 100%;
+    background-image: url("Images/homepage_achtergrondfoto.jpg"); 
+    background-size: cover;
     background-blend-mode: multiply;
     padding-bottom: 5px;
+    width: 100%;
     height: 980px;
-
+    
     
     color: #FFFFFF;
     
@@ -60,11 +61,11 @@ body{
 
 .intro{
     text-align: center;
-    padding-left: 400px;
-    padding-right: 400px;
+    padding-left: 25%;
+    padding-right: 25%;
     padding-top: 170px;
     padding-bottom: 170px;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 
@@ -93,7 +94,7 @@ position: absolute;
   border-bottom: 7px solid #ffffff;
   border-right: 7px solid #ffffff;
   z-index: 9;
-  left: 48%;
+  left: 48.6%;
   -webkit-transform: translate(-50%, 0%) rotate(45deg);
   -moz-transform: translate(-50%, 0%) rotate(45deg);
   transform: translate(-50%, 0%) rotate(45deg);
@@ -120,4 +121,15 @@ position: absolute;
   100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
 }
 
+
+h3{
+    text-align: center;
+    padding-top:450px;
+    font-size: 1.8em;
+    animation: FadeIn 3s;
+}
   
+@keyframes FadeIn {
+   0% { opacity: 0; }
+   100% { opacity: 1; } 
+}
