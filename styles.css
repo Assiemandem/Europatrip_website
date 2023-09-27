@@ -210,3 +210,37 @@ h3{
         flex-direction: column;
     }
 }
+
+
+/* STYLE VOOR FOTOGALERIJ */
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .responsive {
+    padding: 8px;
+    float: left;
+    width: 25%;
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .responsive {
+      width: 50%;
+      margin: 16px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+h5{
+    text-align: center;
+    font-size: 2em;
+    padding-top: 25px;
+    border: solid px black;
+}
