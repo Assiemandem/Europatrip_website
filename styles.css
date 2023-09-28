@@ -205,7 +205,7 @@ h3{
 
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 900px){
     .content{
         flex-direction: column;
     }
@@ -243,4 +243,43 @@ h5{
     font-size: 2em;
     padding-top: 25px;
     border: solid px black;
+}   
+
+
+
+
+
+.fotogal{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap ;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
+
+
+
+ul li img {
+    width: 100%;
+    padding: 6px;
+}
+
+
+.fotogal li{
+    display: block;
+    width: 25%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .fotogal li {
+      width: 50%;
+      margin: 16px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .fotogal li {
+      width: 100%;
+    }
+  }
