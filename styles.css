@@ -283,3 +283,9 @@ ul li img {
       width: 100%;
     }
   }
+
+  h2{
+    text-align: center;
+    padding-top: 80px;
+    font-size: 2em;
+  }
