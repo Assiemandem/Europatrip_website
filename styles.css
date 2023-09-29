@@ -8,7 +8,7 @@ body{
     margin: 0;
 }
 
-
+/* HEADERS */
 .main-header{
     background-color: rgba(0, 0, 0, .20);
     background-image: url("Images/homepage_achtergrondfoto.jpg");
@@ -36,6 +36,8 @@ body{
     
 }
 
+
+/* NAVIGATIE BALK */
 .nav ul {
     margin: 0;
 }
@@ -205,49 +207,19 @@ h3{
 
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1200px){
     .content{
         flex-direction: column;
     }
 }
 
 
+
+
+
+
+
 /* STYLE VOOR FOTOGALERIJ */
-
-div.gallery img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .responsive {
-    padding: 8px;
-    float: left;
-    width: 25%;
-  }
-  
-  @media only screen and (max-width: 1000px) {
-    .responsive {
-      width: 50%;
-      margin: 16px 0;
-    }
-  }
-  
-  @media only screen and (max-width: 700px) {
-    .responsive {
-      width: 100%;
-    }
-  }
-  
-h5{
-    text-align: center;
-    font-size: 2em;
-    padding-top: 25px;
-    border: solid px black;
-}   
-
-
-
-
 
 .fotogal{
     display: flex;
@@ -289,3 +261,37 @@ ul li img {
     padding-top: 80px;
     font-size: 2em;
   }
+
+
+
+
+
+
+
+
+  /*INDIVIDUELE STADPAGINAS */
+  .verhaaltjes{
+    display: flex;
+    padding: 2em;
+}
+
+.verhaaltjes img{
+    height:fit-content;
+    width: 50%;
+    padding: 1em;
+}
+
+.verhaaltjes p{
+    font-size: 1.23em;
+}
+
+.header a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: 250ms
+}
+
+.header a:hover{
+    color: grey;
+}
