@@ -36,6 +36,8 @@ body{
     
 }
 
+
+
 h1{
     text-align: center;
 }
@@ -158,12 +160,12 @@ h1{
 
 .container .row .header h1{
     padding-top: 30px;
-    font-size: 3em;
+    font-size: 4vw;
 }
 
 .container .row .header p{
     margin-top: 15px;
-    font-size: 25px;
+    font-size: 1.5vw;
     line-height: 1.5;
 
 }
