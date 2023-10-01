@@ -36,6 +36,10 @@ body{
     
 }
 
+h1{
+    text-align: center;
+}
+
 
 /* NAVIGATIE BALK */
 .nav ul {
@@ -68,22 +72,23 @@ body{
 
 .titel{
     text-align: center;
-    font-size: 5.7vw;
+    font-size: 5.5vw;
     
 }
 
 
+
 .intro{
     text-align: center;
-    padding-left: 25%;
-    padding-right: 25%;
+    padding-left: 10%;
+    padding-right: 10%;
     padding-top: 170px;
     padding-bottom: 170px;
-    font-size: 1.3em;
+    font-size: 2vh;
 }
 
 
-
+/* ARROW + animated scroll arrow animation*/
 .arrow{ 
     position: absolute;
     left: 50%;
@@ -109,7 +114,7 @@ body{
 }
 
 
-/*animated scroll arrow animation*/
+
 @-webkit-keyframes fade_move_down {
   0%   { -webkit-transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
   50%  { opacity: 1;  }
@@ -127,17 +132,8 @@ body{
 }
 
 
-h3{
-    text-align: center;
-    padding-top: 42vh;
-    font-size: 1.8em;
-    animation: FadeIn 3s;
-}
-  
-@keyframes FadeIn {
-   0% { opacity: 0; }
-   100% { opacity: 1; } 
-}
+
+
 
 
 
@@ -264,7 +260,7 @@ ul li img {
 
 
 
-  
+
 
   /*INDIVIDUELE STADPAGINAS */
   .verhaaltjes{
