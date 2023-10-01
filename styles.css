@@ -264,10 +264,7 @@ ul li img {
 
 
 
-
-
-
-
+  
 
   /*INDIVIDUELE STADPAGINAS */
   .verhaaltjes{
@@ -294,4 +291,16 @@ ul li img {
 
 .header a:hover{
     color: grey;
+}
+
+@media (max-width: 1000px) {
+    .verhaaltjes{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1000px) {
+    .verhaaltjes img{
+        width: 100%;
+    }
 }
