@@ -260,6 +260,13 @@ ul li img {
     font-size: 2em;
   }
 
+  ul li img{
+    transition: ease-in 0.25;
+  }
+
+ul li img:hover{
+    transform:  scale(1.7);
+}
 
 
 
