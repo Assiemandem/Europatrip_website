@@ -76,7 +76,11 @@ h1{
 main h2{
     text-align: center;
     margin: 3vw;
+    font-size: 1.85em;
 }
+
+
+
 
 
 
@@ -133,7 +137,7 @@ main h1{
 section{
     display: flex;
     flex-wrap: wrap 3;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     
        
@@ -165,8 +169,8 @@ section article p{
 
 }
 
-@media screen and (max-width: 70em){
-    .content{
+@media screen and (max-width: 60em){
+    section{
         flex-direction: column;
     }
 }
@@ -201,16 +205,15 @@ ul li img {
     width: 25%;
 }
 
-@media only screen and (max-width: 1000px) {
+@media (max-width: 62.5em) {
     .fotogal li {
-      width: 50%;
-      margin: 1em;                                                                                                  
+      width: 50%;                                                                                                 
     }
   }
   
-  @media only screen and (max-width: 700px) {
+  @media (max-width: 43.75em) {
     .fotogal li {
-      width: 100%;
+      width: 100%;  
     }
   }
 
@@ -221,11 +224,11 @@ ul li img {
   }
 
   ul li img{
-    transition: ease-in 0.25;
+    transition: ease-in-out 0.25s;
   }
 
 ul li img:hover{
-    transform:  scale(1.7);
+    transform:  scale(1.5);
 }
 
 
