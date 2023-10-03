@@ -53,10 +53,12 @@ h1{
     padding: 1vw;
     color: white;
     text-decoration: none;
+    transition: 0.25s;
 }
 
 .nav a:hover {
-    text-decoration: underline;    
+    text-decoration: underline;
+    transform: scale(1.1);    
 }
 
 .nav {
@@ -248,6 +250,7 @@ ul li img:hover{
 
 .verhaaltjes p{
     font-size: 1.23em;
+    
 }
 
 .terug{
@@ -262,6 +265,7 @@ ul li img:hover{
 
 .terug:hover{
     color: grey;
+    transform: scale(1.1);
 }
 
 @media (max-width: 62.5em) {
