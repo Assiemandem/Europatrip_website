@@ -84,31 +84,31 @@ main h2{
 /* ARROW + animated scroll arrow animation*/
 .arrow{ 
     position: absolute;
-    bottom: 20px;   
+    bottom: 1.25em;   
     display: block;
-    width: 2.4vw;
-    height: 2.4vw;
-    border-bottom: 7px solid #ffffff;
-    border-right: 7px solid #ffffff;
+    width: 2.7em;
+    height: 2.7em;
+    border-bottom: 0.4375em solid #ffffff;
+    border-right: 0.4375em solid #ffffff;
     left: 48.6%;
     transform: translate(-50%, 0%) rotate(45deg);
     animation: fade_move_down 4s ease-in-out infinite;
 }
 
 @keyframes fade_move_down {
-  0%   { transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  0%   { transform:translate(0,-0.625em) rotate(45deg); opacity: 0;  }
   50%  { opacity: 1;  }
-  100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
+  100% { transform:translate(0,0.625em) rotate(45deg); opacity: 0; }
 }
 @keyframes fade_move_down {
-  0%   { transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  0%   { transform:translate(0,-0.625em) rotate(45deg); opacity: 0;  }
   50%  { opacity: 1;  }
-  100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
+  100% { transform:translate(0,0.625em) rotate(45deg); opacity: 0; }
 }
 @keyframes fade_move_down {
-  0%   { transform:translate(0,-10px) rotate(45deg); opacity: 0;  }
+  0%   { transform:translate(0,-0.625em) rotate(45deg); opacity: 0;  }
   50%  { opacity: 1;  }
-  100% { transform:translate(0,10px) rotate(45deg); opacity: 0; }
+  100% { transform:translate(0,0.625em) rotate(45deg); opacity: 0; }
 }
 
 
@@ -130,42 +130,42 @@ main h1{
 }
 
 
-.content{
+section{
     display: flex;
     flex-wrap: wrap 3;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    
        
 
 }
 
-.content .card{
+section article{
     flex:1;
-    margin: 50px 20px;
-    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+    margin: 3.125em 1.25em;
+    box-shadow: 0em 0em 0.3125em 0em rgba(0,0,0,0.1);
     background-color: #fff;
 }
 
-.content .card img{
+section article img{
     width: 100%;
     height: auto;
 }
 
-.content .card h4{
-    margin-top: 10px;
-    margin-left: 10px;
-    font-size: 18px;
+section article h4{
+    margin-top: 0.625em;
+    margin-left: 0.625em;
+    font-size: 1.125em;
 }
 
-.content .card p{
-    font-size: 15px;
+section article p{
+    font-size: 0.9375em;
     line-height: 1.5;
-    padding: 10px;
+    padding: 0.625em;
 
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 70em){
     .content{
         flex-direction: column;
     }
@@ -192,7 +192,7 @@ main h1{
 
 ul li img {
     width: 100%;
-    padding: 6px;                                                                                                       
+    padding: 0.375em;                                                                                                       
 }
 
 
@@ -204,7 +204,7 @@ ul li img {
 @media only screen and (max-width: 1000px) {
     .fotogal li {
       width: 50%;
-      margin: 16px 0;                                                                                                  
+      margin: 1em;                                                                                                  
     }
   }
   
@@ -261,13 +261,13 @@ ul li img:hover{
     color: grey;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 62.5em) {
     .verhaaltjes{
         flex-direction: column;
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 62.5em) {
     .verhaaltjes img{
         width: 100%;
     }
