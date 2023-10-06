@@ -10,7 +10,7 @@ body{
 
 
 
-/* HEADERS */
+/* ALGEMENE OPMAAK */
 .main-header{
     background-color: rgba(0, 0, 0, .20);
     background-image: url("Images/homepage_achtergrondfoto.jpg");
@@ -20,22 +20,15 @@ body{
 }
 
 
-.header-home{
-    background-color: rgba(0, 0, 0, .20);
-    background-image: url("Images/homepage_achtergrondfoto.jpg"); 
-    background-size: cover;
-    background-blend-mode: multiply;
-    width: 100%;
-    height: 100vh;
-    color: #FFFFFF;   
-}
-
-
 h1{
+    font-size: 4em;
     text-align: center;
 }
 
-
+.uitleg{
+    text-align: center;
+    font-size: 1.5em;
+}
 
 
 
@@ -66,13 +59,32 @@ h1{
     font-size: 2.5vh;
     font-weight: bold ;
     
+}
 
+
+
+
+/* HOMEPAGE */
+.header-home{
+    background-color: rgba(0, 0, 0, .20);
+    background-image: url("Images/homepage_achtergrondfoto.jpg"); 
+    background-size: cover;
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 100vh;
+    color: #FFFFFF;   
 }
 
 .titel{
     text-align: center;
     font-size: 5.5vw;
     
+}
+
+@media (max-width:43.75em){
+    .titel{
+        font-size: 3.2em;
+    }
 }
 
 main h2{
@@ -83,11 +95,7 @@ main h2{
 
 
 
-
-
-
-
-/* ARROW + animated scroll arrow animation*/
+/* arrow scroll animatie */
 .arrow{ 
     position: absolute;
     bottom: 1.25em;   
@@ -119,23 +127,7 @@ main h2{
 
 
 
-
-
-
-
-
-/* STYLE VOOR TRIPPAGINA EN RESTAURANT PAGINA*/
-
-main h1{
-    font-size: 4em;
-}
-
-.uitleg{
-    text-align: center;
-    font-size: 1.5em;
-}
-
-
+/* STYLE VOOR TRIPPAGINA EN RESTAURANT PAGINA */
 section{
     display: flex;
     flex-wrap: wrap 3;
@@ -179,17 +171,11 @@ section article p{
 
 
 
-
-
-
-
-/* STYLE VOOR FOTOGALERIJ */
-
+/* FOTOGALERIJ */
 .fotogal{
     display: flex;
     justify-content: center;
     flex-wrap: wrap ;
-    list-style: none;
     padding: 0;
     margin: 0;
 }
@@ -219,12 +205,6 @@ ul li img {
     }
   }
 
-  h2{
-    text-align: center;
-    padding-top: 3em;
-    font-size: 2em;
-  }
-
   ul li img{
     transition: ease-in-out 0.25s;
   }
@@ -236,7 +216,9 @@ ul li img:hover{
 
 
 
-  /*INDIVIDUELE STADPAGINAS */
+  
+
+/* INDIVIDUELE STADPAGINAS */
   .verhaaltjes{
     display: flex;
     padding: 2em;
@@ -253,18 +235,22 @@ ul li img:hover{
     
 }
 
-.terug{
+div{
     display: flex;
     justify-content: center;
+}
+
+.terug{
     color: black;
     text-decoration: none;
     font-size: 1.2em;
-    transition: 250ms
-    
+    transition: 250ms;
+    width: 4em;
 }
 
+
 .terug:hover{
-    color: grey;
+    color: grey;    
     transform: scale(1.1);
 }
 
@@ -279,3 +265,5 @@ ul li img:hover{
         width: 100%;
     }
 }
+
+
