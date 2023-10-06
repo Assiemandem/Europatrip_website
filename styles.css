@@ -1,17 +1,17 @@
+
+/* ALGEMENE OPMAAK */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
 * {
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif; 
 }
-body{
+body {
     margin: 0;
 }
 
 
-
-/* ALGEMENE OPMAAK */
-.main-header{
+.main-header {
     background-color: rgba(0, 0, 0, .20);
     background-image: url("Images/homepage_achtergrondfoto.jpg");
     background-size: cover;
@@ -20,15 +20,16 @@ body{
 }
 
 
-h1{
+h1 {
     font-size: 4em;
     text-align: center;
 }
 
-.uitleg{
+.uitleg {
     text-align: center;
     font-size: 1.5em;
 }
+
 
 
 
@@ -63,7 +64,7 @@ h1{
 
 
 /* HOMEPAGE */
-.header-home{
+.header-home {
     background-color: rgba(0, 0, 0, .20);
     background-image: url("Images/homepage_achtergrondfoto.jpg"); 
     background-size: cover;
@@ -73,34 +74,32 @@ h1{
     color: #FFFFFF;   
 }
 
-.titel{
+.titel {
     text-align: center;
     font-size: 5.5vw;
     
 }
 
-@media (max-width:43.75em){
-    .titel{
+@media (max-width:43.75em) {
+    .titel {
         font-size: 3.2em;
     }
 }
 
-.intro{
+.intro {
     text-align: center;
-    margin: 6vw;
-    font-size: 1.85em;
+    margin: 7.5vw;
+    font-size: 1.5em;
 }
 
-@media(max-width:43.75em){
-    .intro{
+@media(max-width:43.75em) {
+    .intro {
         font-size: 1.3em;
     }
 }
 
 
-
-/* arrow scroll animatie */
-.arrow{ 
+.arrow { 
     position: absolute;
     bottom: 1.25em;   
     display: block;
@@ -132,43 +131,41 @@ h1{
 
 
 /* STYLE VOOR TRIPPAGINA EN RESTAURANT PAGINA */
-section{
+section {
     display: flex;
-    flex-wrap: wrap 3;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    
-       
 
 }
 
-section article{
+section article { 
     flex:1;
     margin: 3.125em 1.25em;
-    box-shadow: 0em 0em 0.3125em 0em rgba(0,0,0,0.1);
+    box-shadow: 0.3em 2em 1em 0em rgba(0,0,0,0.1);
     background-color: #fff;
 }
 
-section article img{
+section article img {
     width: 100%;
     height: auto;
 }
 
-section article h4{
+section article h4 {
     margin-top: 0.625em;
     margin-left: 0.625em;
     font-size: 1.125em;
 }
 
-section article p{
+section article p {
     font-size: 0.9375em;
     line-height: 1.5;
     padding: 0.625em;
 
 }
 
-@media screen and (max-width: 60em){
-    section{
+@media screen and (max-width: 60em) {
+    section {
         flex-direction: column;
     }
 }
@@ -176,7 +173,7 @@ section article p{
 
 
 /* FOTOGALERIJ */
-.fotogal{
+.fotogal {
     display: flex;
     justify-content: center;
     flex-wrap: wrap ;
@@ -192,7 +189,7 @@ ul li img {
 }
 
 
-.fotogal li{
+.fotogal li {
     display: block;
     width: 25%;
 }
@@ -209,39 +206,44 @@ ul li img {
     }
   }
 
-  ul li img{
+  ul li img {
     transition: ease-in-out 0.25s;
   }
 
-ul li img:hover{
+ul li img:hover {
     transform:  scale(1.5);
 }
+
+h2 {
+    text-align: center;
+    padding-top: 3em;
+  }
 
 
 
 /* INDIVIDUELE STADPAGINAS */
-  .verhaaltjes{
+.verhaaltjes {
     display: flex;
-    padding: 2em;
+    padding: 2em
 }
 
-.verhaaltjes img{
+.verhaaltjes img {
     height:fit-content;
     width: 50%;
     padding: 1em;
 }
 
-.verhaaltjes p{
-    font-size: 1.23em;
+.verhaaltjes p { 
+    font-size: 1em;
     
 }
 
-div{
+div {
     display: flex;
     justify-content: center;
 }
 
-.terug{
+.terug { 
     color: black;
     text-decoration: none;
     font-size: 1.2em;
@@ -250,19 +252,19 @@ div{
 }
 
 
-.terug:hover{
+.terug:hover {
     color: grey;    
     transform: scale(1.1);
 }
 
 @media (max-width: 62.5em) {
-    .verhaaltjes{
+    .verhaaltjes {
         flex-direction: column;
     }
 }
 
 @media (max-width: 62.5em) {
-    .verhaaltjes img{
+    .verhaaltjes img {
         width: 100%;
     }
 }
