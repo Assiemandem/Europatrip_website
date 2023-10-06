@@ -32,7 +32,6 @@ h1{
 
 
 
-
 /* NAVIGATIE BALK */
 .nav ul {
     margin: 0;
@@ -63,7 +62,6 @@ h1{
 
 
 
-
 /* HOMEPAGE */
 .header-home{
     background-color: rgba(0, 0, 0, .20);
@@ -87,10 +85,16 @@ h1{
     }
 }
 
-main h2{
+.intro{
     text-align: center;
-    margin: 3vw;
+    margin: 6vw;
     font-size: 1.85em;
+}
+
+@media(max-width:43.75em){
+    .intro{
+        font-size: 1.3em;
+    }
 }
 
 
@@ -214,9 +218,6 @@ ul li img:hover{
 }
 
 
-
-
-  
 
 /* INDIVIDUELE STADPAGINAS */
   .verhaaltjes{
