@@ -126,11 +126,17 @@ h1 {
   0%   { transform:translate(0,-0.625em) rotate(45deg); opacity: 0;  }
   50%  { opacity: 1;  }
   100% { transform:translate(0,0.625em) rotate(45deg); opacity: 0; }
+
+}
+
+footer img {
+    width: 100%;
 }
 
 
 
-/* STYLE VOOR TRIPPAGINA EN RESTAURANT PAGINA */
+
+/* STYLE VOOR TRIPPAGINA, RESTAURANT PAGINA EN TEKSTBLOKKEN BIJ DE INDIVIDUELE STADSPAGINAS*/
 section {
     display: flex;
     flex-wrap: wrap;
@@ -172,6 +178,7 @@ section article p {
 
 
 
+
 /* FOTOGALERIJ */
 .fotogal {
     display: flex;
@@ -181,13 +188,10 @@ section article p {
     margin: 0;
 }
 
-
-
 ul li img {
     width: 100%;
     padding: 0.375em;                                                                                                       
 }
-
 
 .fotogal li {
     display: block;
@@ -250,7 +254,6 @@ div {
     transition: 250ms;
     width: 4em;
 }
-
 
 .terug:hover {
     color: grey;    
