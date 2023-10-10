@@ -34,14 +34,14 @@ h1 {
 
 
 /* NAVIGATIE BALK */
-.nav ul {
+nav ul {
     margin: 0;
 }
-.nav li {
+nav li {
     display: inline;
 }
 
-.nav a {
+nav a {
     display: inline-block;
     padding: 1vw;
     color: white;
@@ -49,12 +49,12 @@ h1 {
     transition: 0.25s;
 }
 
-.nav a:hover {
+nav a:hover {
     text-decoration: underline;
     transform: scale(1.1);    
 }
 
-.nav {
+nav {
     text-align: center;
     font-size: 2.5vh;
     font-weight: bold ;
@@ -98,8 +98,8 @@ h1 {
     }
 }
 
-
-.arrow { 
+/* DEZE PIJL ANIMATIE IS NIET VAN MIJ, MAAR IK HEB HEM WEL TOT MIJN BENODIGDHEDEN GECUSTOMIZED. -->  https://unused-css.com/blog/animated-down-arrow/  */
+.arrow {                        
     position: absolute;
     bottom: 1.25em;   
     display: block;
@@ -179,6 +179,19 @@ section article p {
 
 
 
+/* LEES MEER KNOPPEN */
+article p a {
+    text-decoration: none;
+    color: blue;
+}
+
+article p a:hover {
+    text-decoration: underline;
+}
+
+
+
+
 /* FOTOGALERIJ */
 .fotogal {
     display: flex;
@@ -225,6 +238,8 @@ h2 {
 
 
 
+
+
 /* INDIVIDUELE STADPAGINAS */
 .verhaaltjes {
     display: flex;
@@ -257,7 +272,7 @@ div {
 
 .terug:hover {
     color: grey;    
-    transform: scale(1.1);
+    transform: scale(1.1); 
 }
 
 @media (max-width: 62.5em) {
