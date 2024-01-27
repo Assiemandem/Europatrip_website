@@ -102,7 +102,6 @@ nav {
 .arrow {                        
     position: absolute;
     bottom: 1.25em;   
-    display: inline-block;
     width: 2.7em;
     height: 2.7em;
     border-bottom: 0.4375em solid #ffffff;
@@ -112,9 +111,9 @@ nav {
 }
 
 @keyframes fade_move_down {
-  0%   { transform:translate(0,-0.625em) rotate(45deg); opacity: 0;  }
-  50%  { opacity: 1;  }
-  100% { transform:translate(0,0.625em) rotate(45deg); opacity: 0; }
+  0%   { transform:translate(0,-0.625em) rotate(45deg); opacity: 1; }
+  50%  { transform:translate(0,0.625em) rotate(45deg); opacity: 1; }
+  100% { transform:translate(0,-0.625em) rotate(45deg); opacity: 1; }
 }
 
 footer img {
@@ -125,7 +124,7 @@ footer img {
 
 
 /* STYLE VOOR TRIPPAGINA, RESTAURANT PAGINA EN TEKSTBLOKKEN BIJ DE INDIVIDUELE STADSPAGINAS*/
-section {
+div {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -133,25 +132,25 @@ section {
 
 }
 
-section article { 
+div article { 
     flex:1;
     margin: 3.125em 1.25em;
     box-shadow: 0.3em 2em 1em 0em rgba(0,0,0,0.1);
     background-color: #fff;
 }
 
-section article img {
+div article img {
     width: 100%;
     height: auto;
 }
 
-section article h4 {
+div article h2 {
     margin-top: 0.625em;
     margin-left: 0.625em;
     font-size: 1.125em;
 }
 
-section article p {
+div article p {
     font-size: 0.9375em;
     line-height: 1.5;
     padding: 0.625em;
@@ -219,9 +218,10 @@ ul li img:hover {
     transform:  scale(1.5);
 }
 
-h2 {
+.fototitel {
     text-align: center;
     padding-top: 3em;
+    font-size: 2.5em;
   }
 
 
@@ -245,12 +245,10 @@ h2 {
     
 }
 
-div {
-    display: flex;
-    justify-content: center;
-}
 
 .terug { 
+    display: block;
+    margin: 0 auto;
     color: black;
     text-decoration: none;
     font-size: 1.2em;
