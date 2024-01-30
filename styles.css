@@ -1,11 +1,11 @@
-
 /* ALGEMENE OPMAAK */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
 * {
     box-sizing: border-box;
-    font-family: 'Raleway', sans-serif; 
+    font-family: 'Raleway', sans-serif;
 }
+
 body {
     margin: 0;
 }
@@ -37,6 +37,7 @@ h1 {
 nav ul {
     margin: 0;
 }
+
 nav li {
     display: inline;
 }
@@ -51,14 +52,14 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
-    transform: scale(1.1);    
+    transform: scale(1.1);
 }
 
 nav {
     text-align: center;
     font-size: 2.5vh;
-    font-weight: bold ;
-    
+    font-weight: bold;
+
 }
 
 
@@ -66,18 +67,18 @@ nav {
 /* HOMEPAGE */
 .header-home {
     background-color: rgba(0, 0, 0, .20);
-    background-image: url("Images/homepage_achtergrondfoto.jpg"); 
+    background-image: url("Images/homepage_achtergrondfoto.jpg");
     background-size: cover;
     background-blend-mode: multiply;
     width: 100%;
     height: 100vh;
-    color: #FFFFFF;   
+    color: #FFFFFF;
 }
 
 .titel {
     text-align: center;
     font-size: 5.5vw;
-    
+
 }
 
 @media (max-width:43.75em) {
@@ -99,9 +100,9 @@ nav {
 }
 
 /* DEZE PIJL ANIMATIE IS NIET VAN MIJ, MAAR IK HEB HEM WEL TOT MIJN BENODIGDHEDEN GECUSTOMIZED. -->  https://unused-css.com/blog/animated-down-arrow/  */
-.arrow {                        
+.arrow {
     position: absolute;
-    bottom: 1.25em;   
+    bottom: 1.25em;
     width: 2.7em;
     height: 2.7em;
     border-bottom: 0.4375em solid #ffffff;
@@ -111,9 +112,20 @@ nav {
 }
 
 @keyframes fade_move_down {
-  0%   { transform:translate(0,-0.625em) rotate(45deg); opacity: 1; }
-  50%  { transform:translate(0,0.625em) rotate(45deg); opacity: 1; }
-  100% { transform:translate(0,-0.625em) rotate(45deg); opacity: 1; }
+    0% {
+        transform: translate(0, -0.625em) rotate(45deg);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translate(0, 0.625em) rotate(45deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(0, -0.625em) rotate(45deg);
+        opacity: 1;
+    }
 }
 
 footer img {
@@ -132,10 +144,10 @@ div {
 
 }
 
-div article { 
-    flex:1;
+div article {
+    flex: 1;
     margin: 3.125em 1.25em;
-    box-shadow: 0.3em 2em 1em 0em rgba(0,0,0,0.1);
+    box-shadow: 0.3em 2em 1em 0em rgba(0, 0, 0, 0.1);
     background-color: #fff;
 }
 
@@ -183,14 +195,14 @@ article p a:hover {
 .fotogal {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
     padding: 0;
     margin: 0;
 }
 
 ul li img {
     width: 100%;
-    padding: 0.375em;                                                                                                       
+    padding: 0.375em;
 }
 
 .fotogal li {
@@ -200,29 +212,29 @@ ul li img {
 
 @media (max-width: 62.5em) {
     .fotogal li {
-      width: 50%;                                                                                                 
+        width: 50%;
     }
-  }
-  
-  @media (max-width: 43.75em) {
-    .fotogal li {
-      width: 100%;  
-    }
-  }
+}
 
-  ul li img {
+@media (max-width: 43.75em) {
+    .fotogal li {
+        width: 100%;
+    }
+}
+
+ul li img {
     transition: ease-in-out 0.25s;
-  }
+}
 
 ul li img:hover {
-    transform:  scale(1.5);
+    transform: scale(1.5);
 }
 
 .fototitel {
     text-align: center;
     padding-top: 3em;
     font-size: 2.5em;
-  }
+}
 
 
 
@@ -231,22 +243,24 @@ ul li img:hover {
 /* INDIVIDUELE STADPAGINAS */
 .verhaaltjes {
     display: flex;
+    align-items: row;
     padding: 2em
 }
 
-.verhaaltjes img {
-    height:fit-content;
+article div img {
+    height: fit-content;
     width: 50%;
     padding: 1em;
 }
 
-.verhaaltjes p { 
+article div div {
     font-size: 1em;
-    
+    width: 50%;
+
 }
 
 
-.terug { 
+.terug {
     display: block;
     margin: 0 auto;
     color: black;
@@ -257,8 +271,8 @@ ul li img:hover {
 }
 
 .terug:hover {
-    color: grey;    
-    transform: scale(1.1); 
+    color: grey;
+    transform: scale(1.1);
 }
 
 @media (max-width: 62.5em) {
@@ -268,9 +282,14 @@ ul li img:hover {
 }
 
 @media (max-width: 62.5em) {
-    .verhaaltjes img {
+    article div img {
         width: 100%;
     }
 }
 
 
+@media (max-width: 62.5em) {
+    article div div {
+        width: 100%;
+    }
+}
